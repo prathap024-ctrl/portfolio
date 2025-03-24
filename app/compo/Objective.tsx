@@ -1,9 +1,9 @@
 "use client";
 const Objective = () => {
   return (
-    <div className="w-full h-auto border-b-2 border-t-2 border-black">
+    <div className="w-full h-auto border-b-2 border-t-2 border-settheme">
       <div className="w-[90%] mx-auto py-5 ">
-        <h2 className="text-2xl font-semibold text-center md:text-start">
+        <h2 className="text-2xl font-semibold text-center text-settheme md:text-start">
           Summary:
         </h2>
         <p className="text-center md:text-start ">

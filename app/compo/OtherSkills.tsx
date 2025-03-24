@@ -5,7 +5,7 @@ import images from "../assets/images";
 const OtherSkills = () => {
   return (
     <div>
-      <div className="flex flex-col bg-white rounded-3xl">
+      <div className="flex flex-col bg-settheme">
         <div className="px-6 py-8 sm:p-10 sm:pb-6">
           <div className="w-[95%] mx-auto">
             <h2 className="text-2xl font-semibold text-center md:text-start">

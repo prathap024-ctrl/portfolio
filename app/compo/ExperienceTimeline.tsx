@@ -46,7 +46,7 @@ const ExperienceTimeline = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8 border-t-2 border-b-2 border-black">
+    <div className="min-h-screen bg-settheme py-12 px-4 sm:px-6 lg:px-8 border-t-2 border-b-2 border-settheme">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">
           Professional Experience
@@ -66,23 +66,23 @@ const ExperienceTimeline = () => {
               data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
             >
               <div className="w-full md:w-5/12">
-                <div className="p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                <div className="p-6 bg-settheme rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
                   <div className="flex items-center mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900">
+                      <h3 className="text-xl font-bold text-settheme">
                         {experience.jobTitle}
                       </h3>
-                      <p className="text-gray-600 font-medium">
+                      <p className="text-settheme font-medium">
                         {experience.companyName}
                       </p>
                     </div>
                   </div>
 
                   <div className="mb-4">
-                    <p className="text-gray-500 text-sm">
+                    <p className="text-settheme text-sm">
                       {experience.startDate} - {experience.endDate}
                     </p>
-                    <div className="flex items-center text-gray-500 text-sm mt-1">
+                    <div className="flex items-center text-settheme text-sm mt-1">
                       <MapPinIcon className="mr-1" />
                       <span>{experience.location}</span>
                     </div>
@@ -90,7 +90,7 @@ const ExperienceTimeline = () => {
 
                   <ul className="space-y-2">
                     {experience.description.map((item, idx) => (
-                      <li key={idx} className="text-gray-600 text-sm">
+                      <li key={idx} className="text-settheme text-sm">
                         • {item}
                       </li>
                     ))}
@@ -106,7 +106,7 @@ const ExperienceTimeline = () => {
 
         {experiences.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">
+            <p className="text-settheme text-lg">
               No experience entries available
             </p>
           </div>

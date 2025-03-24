@@ -5,7 +5,7 @@ import images from "../assets/images";
 const Skillsec = () => {
   return (
     <div>
-      <div className="flex flex-col bg-white rounded-3xl">
+      <div className="flex flex-col bg-settheme">
         <div className="px-6 py-6 sm:p-8 sm:pb-6">
           <div className="w-[94%] mx-auto">
             <h2 className="text-4xl font-semibold text-center md:text-start pb-5">
