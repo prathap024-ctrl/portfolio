@@ -2,6 +2,19 @@
 import Image from "next/image";
 import images from "../assets/images";
 
+const skills = [
+  { name: "Html", src: images.html },
+  { name: "Css", src: images.css },
+  { name: "Javascript", src: images.javascript },
+  { name: "ReactJS", src: images.react },
+  { name: "Tailwind Css", src: images.tailwind },
+  { name: "Bootstrap", src: images.bootstrap },
+  { name: "Express", src: images.express, className: "dark:invert" },
+  { name: "PostgresQL", src: images.postgres },
+  { name: "MongoDB", src: images.mongoDB },
+  { name: "Shadcn UI", src: images.shadcn, className: "dark:invert" },
+];
+
 const Skillsec = () => {
   return (
     <div>
@@ -15,55 +28,18 @@ const Skillsec = () => {
               Using Now:
             </h2>
           </div>
+
           <div className="grid grid-cols-3 md:grid-cols-6 gap-4 py-5 items-center justify-center w-full">
-            <div>
-              <div className="flex justify-center items-center w-20 h-20 mx-auto">
-                <Image src={images.html} alt="Html" />
+            {skills.map((skill, index) => (
+              <div key={index}>
+                <div className="flex justify-center items-center w-20 h-20 mx-auto">
+                  <Image src={skill.src} alt="Html" className={`${skill.className}`}/>
+                </div>
+                <div className="text-center">
+                  <p className=" text-xl font-semibold">{skill.name}</p>
+                </div>
               </div>
-              <div className="text-center">
-                <p className=" text-xl font-semibold">Html</p>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-center items-center w-20 h-20 mx-auto">
-                <Image src={images.css} alt="Css" />
-              </div>
-              <div className="text-center">
-                <p className=" text-xl font-semibold">Css</p>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-center items-center w-20 h-20 mx-auto">
-                <Image src={images.javascript} alt="Javascript" />
-              </div>
-              <div className="text-center">
-                <p className=" text-xl font-semibold">Javascript</p>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-center items-center w-20 h-20 mx-auto">
-                <Image src={images.react} alt="ReactJS" />
-              </div>
-              <div className="text-center">
-                <p className=" text-xl font-semibold">ReactJS</p>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-center items-center w-20 h-20 mx-auto">
-                <Image src={images.tailwind} alt="TailwindCss" />
-              </div>
-              <div className="text-center">
-                <p className=" text-xl font-semibold">Tailwind Css</p>
-              </div>
-            </div>
-            <div>
-              <div className="flex justify-center items-center w-20 h-20 mx-auto">
-                <Image src={images.bootstrap} alt="Bootstrap" />
-              </div>
-              <div className="text-center">
-                <p className=" text-xl font-semibold">Bootstrap</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

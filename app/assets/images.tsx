@@ -16,6 +16,8 @@ import image15 from "./icons8-express-js-250.png";
 import image16 from "./icons8-c++-240.png";
 import image17 from "./icons8-canva-240.png";
 import image18 from "./icons8-photoshop-240.png";
+import image19 from "./drizzle.png";
+import image20 from "./shadcn-ui-seeklogo.png";
 
 export const images = {
   HeroImage: image1,
@@ -36,6 +38,8 @@ export const images = {
   cpp: image16,
   canva: image17,
   photoshop: image18,
+  drizzle: image19,
+  shadcn: image20,
 };
 
 export default images;

@@ -16,6 +16,21 @@ const ExperienceTimeline = () => {
   const experiences = [
     {
       id: 1,
+      companyName: "EY GDS NextGen",
+      jobTitle: "Full Stack development Internship",
+      startDate: "Mar 2025",
+      endDate: "April 2025",
+      location: "Remote",
+      description: [
+        "Built responsive and dynamic user interfaces using React.js, implementing components, state management, and hooks to create seamless user experiences.",
+        "Developed server-side applications with Node.js and Express.js, creating RESTful APIs to handle data requests, authentication, and business logic.",
+        "Designed and managed MongoDB databases, including schema creation, data modeling, and performing CRUD operations to support application functionality.",
+        "Integrated frontend and backend systems, ensuring smooth communication between React.js frontends, Node.js/Express.js backends, and MongoDB databases for cohesive application workflows.",
+      ],
+      companyLogo: "",
+    },
+    {
+      id: 2,
       companyName: "NoxAlgo LLP",
       jobTitle: "Content Writer - Internship",
       startDate: "Nov 2024",
@@ -29,7 +44,7 @@ const ExperienceTimeline = () => {
       companyLogo: "",
     },
     {
-      id: 2,
+      id: 3,
       companyName: "Saandipini Hi-tech School",
       jobTitle: "System Administrator",
       startDate: "July 2023",
