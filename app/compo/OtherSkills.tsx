@@ -12,7 +12,7 @@ const OtherSkills = () => {
               Other Skills:
             </h2>
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 py-5 items-center justify-center w-full">
+          <div className="grid grid-cols-3 md:grid-cols-10 gap-4 py-5 items-center justify-center w-full">
             <div>
               <div className="flex justify-center items-center w-20 h-20 mx-auto">
                 <Image src={images.cpp} alt="C++" />

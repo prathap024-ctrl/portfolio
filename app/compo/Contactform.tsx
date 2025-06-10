@@ -54,17 +54,17 @@ const ContactForm = () => {
     <div className="py-12">
       <div className="container px-4 mx-auto">
         <div className="mx-auto">
-          <div className="max-w-md mx-auto px-8 py-6 bg-settheme rounded-lg border-2 border-settheme">
-            <h2 className="text-2xl font-semibold text-settheme mb-4">
-              Contact Us
+          <div className="max-w-md mx-auto px-8 py-6 rounded-lg border-2 border-white">
+            <h2 className="text-2xl font-semibold text-white mb-4">
+              Get in Touch
             </h2>
             <form onSubmit={sendEmail}>
               <div className="mb-4">
-                <label className="block text-settheme mb-1" htmlFor="name">
+                <label className="block text-white mb-1" htmlFor="name">
                   Your Name
                 </label>
                 <input
-                  className="w-full px-4 py-2 bg-settheme rounded-lg focus:outline-none border-b-2 transition duration-300"
+                  className="w-full px-4 py-2 border-white rounded-lg focus:outline-none border-b-2 transition duration-300"
                   placeholder="Enter your name"
                   type="text"
                   name="name"
@@ -73,11 +73,11 @@ const ContactForm = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-settheme mb-1" htmlFor="email">
+                <label className="block text-white mb-1" htmlFor="email">
                   Your Email
                 </label>
                 <input
-                  className="w-full px-4 py-2 bg-settheme rounded-lg focus:outline-none border-b-2 transition duration-300"
+                  className="w-full px-4 py-2 border-white rounded-lg focus:outline-none border-b-2 transition duration-300"
                   placeholder="Enter your email"
                   name="email"
                   id="email"
@@ -86,11 +86,11 @@ const ContactForm = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-settheme mb-1" htmlFor="message">
+                <label className="block text-white mb-1" htmlFor="message">
                   Your Message
                 </label>
                 <textarea
-                  className="w-full px-4 py-2 bg-settheme rounded-lg focus:outline-none border-b-2 transition duration-300"
+                  className="w-full px-4 py-2 border-white rounded-lg focus:outline-none border-b-2 transition duration-300"
                   rows={4}
                   placeholder="Enter your message"
                   name="message"

@@ -13,6 +13,15 @@ const skills = [
   { name: "PostgresQL", src: images.postgres },
   { name: "MongoDB", src: images.mongoDB },
   { name: "Shadcn UI", src: images.shadcn, className: "dark:invert" },
+  {
+    title: "Prisma ORM",
+    src: images.prisma,
+    className: "dark:invert",
+  },
+  {
+    title: "Drizzle ORM",
+    src: images.drizzle,
+  },
 ];
 
 const Skillsec = () => {
@@ -29,11 +38,15 @@ const Skillsec = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 py-5 items-center justify-center w-full">
+          <div className="grid grid-cols-3 md:grid-cols-10 gap-4 py-5 items-center justify-center w-full">
             {skills.map((skill, index) => (
               <div key={index}>
                 <div className="flex justify-center items-center w-20 h-20 mx-auto">
-                  <Image src={skill.src} alt="Html" className={`${skill.className}`}/>
+                  <Image
+                    src={skill.src}
+                    alt="Html"
+                    className={`${skill.className}`}
+                  />
                 </div>
                 <div className="text-center">
                   <p className=" text-xl font-semibold">{skill.name}</p>

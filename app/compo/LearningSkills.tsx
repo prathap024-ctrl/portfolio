@@ -4,21 +4,17 @@ import images from "../assets/images";
 
 const LearningSkillsData = [
   {
-    title: "Prisma ORM",
-    image: images.prisma,
-    className: "dark:invert",
-  },
-  {
-    title: "Drizzle ORM",
-    image: images.drizzle,
-  },
-  {
     title: "Python",
-    image: images.python,
+    src: images.python,
   },
   {
     title: "Django",
-    image: images.django,
+    src: images.django,
+    className: "dark:invert",
+  },
+  {
+    title: "Langchain",
+    src: images.langchain,
     className: "dark:invert",
   },
 ];
@@ -33,12 +29,12 @@ const LearningSkills = () => {
               Learning:
             </h2>
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4 py-5 items-center justify-center w-full">
+          <div className="grid grid-cols-3 md:grid-cols-10 gap-4 py-5 items-center justify-center w-full">
             {LearningSkillsData.map((skill, index) => (
               <div key={index}>
                 <div className="flex justify-center items-center w-20 h-20 mx-auto">
                   <Image
-                    src={skill.image}
+                    src={skill.src}
                     alt="Prisma"
                     className={`${skill.className}`}
                   />

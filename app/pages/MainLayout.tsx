@@ -1,5 +1,5 @@
 "use client";
-import ContactForm from "../compo/Contactform";
+
 import ExperienceTimeline from "../compo/ExperienceTimeline";
 import HeroSec from "../compo/HeroSec";
 import LearningSkills from "../compo/LearningSkills";
@@ -19,7 +19,6 @@ const MainLayout = () => {
         <OtherSkills />
         <ExperienceTimeline />
         <ProjectSec />
-        <ContactForm />
       </div>
     </>
   );
