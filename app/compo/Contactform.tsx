@@ -65,7 +65,6 @@ const ContactForm = () => {
                 </label>
                 <input
                   className="w-full px-4 py-2 border-white rounded-lg focus:outline-none border-b-2 transition duration-300"
-                  placeholder="Enter your name"
                   type="text"
                   name="name"
                   id="name"
@@ -78,7 +77,6 @@ const ContactForm = () => {
                 </label>
                 <input
                   className="w-full px-4 py-2 border-white rounded-lg focus:outline-none border-b-2 transition duration-300"
-                  placeholder="Enter your email"
                   name="email"
                   id="email"
                   type="email"
@@ -92,7 +90,6 @@ const ContactForm = () => {
                 <textarea
                   className="w-full px-4 py-2 border-white rounded-lg focus:outline-none border-b-2 transition duration-300"
                   rows={4}
-                  placeholder="Enter your message"
                   name="message"
                   id="message"
                   required
