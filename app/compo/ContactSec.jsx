@@ -15,7 +15,7 @@ const ContactSec = () => {
             something?
             <br />{" "}
             <span className="underline">
-              <Link href="/contact" as="/pages/contact">
+              <Link href={"pages/contact"}>
                 Send me an email
               </Link>{" "}
             </span>

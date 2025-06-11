@@ -60,7 +60,7 @@ const ContactForm = () => {
             </h2>
             <form onSubmit={sendEmail}>
               <div className="mb-4">
-                <label className="block text-setTheme mb-1" htmlFor="name">
+                <label className="text-setTheme mb-1" htmlFor="name">
                   Your Name
                 </label>
                 <input
