@@ -23,7 +23,7 @@ const about = {
       "I’m a full-stack developer with a focus on building fast, scalable web apps. Skilled in the MERN stack and various modern frameworks and libraries. I blend clean UI with smart backend logic to deliver seamless user experiences. Currently building tools, products, and digital solutions that make an impact.",
     objective:
       "To build a career in a growing organization, where I can get the opportunities to prove my abilities by accepting challenges, fulfilling the organizational goal and climb the career ladder through continuous learning and commitment.",
-    attachments: "Prathap_Resume",
+    attachments: "Prathap_Resume.pdf",
   },
 };
 
@@ -78,7 +78,7 @@ const Objective = () => {
                 <dt className="text-sm/6 font-medium text-setTheme">
                   {about.title.about}
                 </dt>
-                <dd className="mt-1 text-sm/6 text-setTheme sm:col-span-2 sm:mt-0">
+                <dd className="mt-1 text-sm/6 text-setTheme text-justify sm:col-span-2 sm:mt-0">
                   {about.info.about}
                 </dd>
               </div>
@@ -86,7 +86,7 @@ const Objective = () => {
                 <dt className="text-sm/6 font-medium text-setTheme">
                   {about.title.objective}
                 </dt>
-                <dd className="mt-1 text-sm/6 text-setTheme sm:col-span-2 sm:mt-0">
+                <dd className="mt-1 text-sm/6 text-setTheme text-justify sm:col-span-2 sm:mt-0">
                   {about.info.objective}
                 </dd>
               </div>

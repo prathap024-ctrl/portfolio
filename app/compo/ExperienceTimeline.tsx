@@ -81,7 +81,7 @@ const ExperienceTimeline = () => {
               data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
             >
               <div className="w-full md:w-5/12">
-                <div className="p-6 bg-settheme rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+                <div className="p-6 bg-settheme rounded-lg text-justify shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
                   <div className="flex items-center mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-settheme">
