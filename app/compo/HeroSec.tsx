@@ -34,7 +34,7 @@ const HeroSec = () => {
               👋 Hey, I’m Prathap
             </h2>
             <br />
-            <p className="mt-6 text-lg/8 text-pretty text-gray-300">
+            <p className="mt-6 text-lg/8 text-justify text-gray-300">
               Crafting modern web apps, tools, and products using MERN stack and
               various frameworks. Let’s build something impactful — fast,
               functional, and future-ready.
