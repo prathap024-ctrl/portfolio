@@ -52,19 +52,19 @@ const ContactForm = () => {
 
   return (
     <div className="py-12">
-      <div className="container px-4 mx-auto">
+      <div className=" px-4 mx-auto">
         <div className="mx-auto">
-          <div className="max-w-md mx-auto px-8 py-6 rounded-lg border-2 border-white">
-            <h2 className="text-2xl font-semibold text-white mb-4">
+          <div className="max-w-sm mx-auto px-8 py-6 rounded-lg border-2 border-setTheme">
+            <h2 className="text-2xl font-semibold text-setTheme mb-4">
               Get in Touch
             </h2>
             <form onSubmit={sendEmail}>
               <div className="mb-4">
-                <label className="block text-white mb-1" htmlFor="name">
+                <label className="block text-setTheme mb-1" htmlFor="name">
                   Your Name
                 </label>
                 <input
-                  className="w-full px-4 py-2 border-white rounded-lg focus:outline-none border-b-2 transition duration-300"
+                  className="w-full px-4 py-2 border-setTheme rounded-lg focus:outline-none border-b-2 transition duration-300"
                   type="text"
                   name="name"
                   id="name"
@@ -72,11 +72,11 @@ const ContactForm = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-white mb-1" htmlFor="email">
+                <label className="block text-setTheme mb-1" htmlFor="email">
                   Your Email
                 </label>
                 <input
-                  className="w-full px-4 py-2 border-white rounded-lg focus:outline-none border-b-2 transition duration-300"
+                  className="w-full px-4 py-2 border-setTheme rounded-lg focus:outline-none border-b-2 transition duration-300"
                   name="email"
                   id="email"
                   type="email"
@@ -84,11 +84,11 @@ const ContactForm = () => {
                 />
               </div>
               <div className="mb-4">
-                <label className="block text-white mb-1" htmlFor="message">
+                <label className="block text-setTheme mb-1" htmlFor="message">
                   Your Message
                 </label>
                 <textarea
-                  className="w-full px-4 py-2 border-white rounded-lg focus:outline-none border-b-2 transition duration-300"
+                  className="w-full px-4 py-2 border-setTheme rounded-lg focus:outline-none border-b-2 transition duration-300"
                   rows={4}
                   name="message"
                   id="message"

@@ -2,11 +2,10 @@
 
 import ExperienceTimeline from "../compo/ExperienceTimeline";
 import HeroSec from "../compo/HeroSec";
-import LearningSkills from "../compo/LearningSkills";
 import Objective from "../compo/Objective";
-import OtherSkills from "../compo/OtherSkills";
 import ProjectSec from "../compo/ProjectSec";
 import Skillsec from "../compo/Skillsec";
+import ContactSec from "../compo/ContactSec";
 
 const MainLayout = () => {
   return (
@@ -15,10 +14,9 @@ const MainLayout = () => {
         <HeroSec />
         <Objective />
         <Skillsec />
-        <LearningSkills />
-        <OtherSkills />
         <ExperienceTimeline />
         <ProjectSec />
+        <ContactSec />
       </div>
     </>
   );

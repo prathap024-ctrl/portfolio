@@ -14,7 +14,7 @@ const Projects = [
 const ProjectSec = () => {
   return (
     <>
-      <div className="w-full h-16 flex justify-center items-center mt-5">
+      <div className="w-full h-16 flex justify-center items-center mt-5" id="projects">
         <h3 className="text-4xl font-semibold">Projects:</h3>
       </div>
       <div className="w-[95%] h-auto mx-auto flex flex-col justify-center items-center py-6">

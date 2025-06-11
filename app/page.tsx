@@ -1,6 +1,9 @@
+"use client"
+
 import { ThemeProvider } from "@/components/Theme/theme-provider";
 import Navbar from "./compo/Navbar";
 import MainLayout from "./pages/MainLayout";
+import { MobileDock } from "../components/floatingDock";
 
 export default function Home() {
   return (
@@ -14,6 +17,7 @@ export default function Home() {
         <div className="mt-16">
           <Navbar />
           <MainLayout />
+          <MobileDock />
           <div className="w-full h-16 flex justify-center items-center">
             <p className="text-xl">Made with Next.js</p>
           </div>

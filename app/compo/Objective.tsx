@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { PaperclipIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -22,18 +23,21 @@ const about = {
       "I’m a full-stack developer with a focus on building fast, scalable web apps. Skilled in the MERN stack and various modern frameworks and libraries. I blend clean UI with smart backend logic to deliver seamless user experiences. Currently building tools, products, and digital solutions that make an impact.",
     objective:
       "To build a career in a growing organization, where I can get the opportunities to prove my abilities by accepting challenges, fulfilling the organizational goal and climb the career ladder through continuous learning and commitment.",
-    attachments: "Resume.pdf",
+    attachments: "Prathap_Resume",
   },
 };
 
 const Objective = () => {
   return (
-    <div className="w-full h-auto border-b-2 border-t-2 border-settheme" id="objective">
+    <div
+      className="w-full h-auto border-b-2 border-t-2 border-settheme"
+      id="objective"
+    >
       <div className="w-[90%] mx-auto py-5 ">
         <div>
           <div className="px-4 sm:px-0">
             <h3 className="text-base/7 font-semibold text-setTheme">
-              Personal details and application.
+              Personal details.
             </h3>
           </div>
           <div className="mt-6 border-t border-gray-100">
@@ -109,10 +113,10 @@ const Objective = () => {
                       </div>
                       <div className="ml-4 shrink-0">
                         <Link
-                          href="https://docs.google.com/document/d/1OhWam8qt1aHFI8sXRK0D0PvzN8v7zO-oTXtlsoPVKfE/edit?usp=sharing"
+                          href="https://drive.google.com/file/d/1KGyDuwgZvFzI2jcPhxqzV8bKyDNIWOZH/view?usp=sharing"
                           className="font-medium text-indigo-600 hover:text-indigo-500"
                         >
-                          Download
+                          <Button>Download</Button>
                         </Link>
                       </div>
                     </li>
