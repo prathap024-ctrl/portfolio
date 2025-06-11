@@ -37,7 +37,7 @@ export function MobileDock() {
   ];
   return (
     <div className="flex items-center justify-center w-full z-50 sticky bottom-10">
-      <FloatingDock mobileClassName="translate-y-20" items={links} />
+      <FloatingDock mobileClassName="translate-y-0 inset-x-30" items={links} />
     </div>
   );
 }
