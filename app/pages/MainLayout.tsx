@@ -3,9 +3,9 @@
 import ExperienceTimeline from "../compo/ExperienceTimeline";
 import HeroSec from "../compo/HeroSec";
 import Objective from "../compo/Objective";
-import ProjectSec from "../compo/ProjectSec";
 import Skillsec from "../compo/Skillsec";
 import ContactSec from "../compo/ContactSec";
+import ProjectsPage from "./projects/page";
 
 const MainLayout = () => {
   return (
@@ -15,7 +15,7 @@ const MainLayout = () => {
         <Objective />
         <Skillsec />
         <ExperienceTimeline />
-        <ProjectSec />
+        <ProjectsPage />
         <ContactSec />
       </div>
     </>
