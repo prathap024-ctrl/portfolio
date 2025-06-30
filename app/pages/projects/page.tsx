@@ -3,6 +3,31 @@ import React from "react";
 
 const projects = [
   {
+    title: "PDF RAG App",
+    liveDemo: "https://your-live-demo-link.com",
+    github: "https://github.com/prathap024-ctrl/pdf-rag.git",
+    stack: "React, Node.js, LangChain, Gemini AI, ChromaDB, PDF-parser",
+    overview:
+      "Built an AI-powered web app that allows users to upload PDFs and ask questions, generating answers using a RAG (Retrieval-Augmented Generation) pipeline with Gemini AI.",
+    features: [
+      "Upload and parse PDF files using PDF.js",
+      "Chunk content and store embeddings in ChromaDB",
+      "Perform similarity search with LangChain and Gemini AI",
+      "Generate context-aware answers from retrieved chunks",
+      "Supports large file input with chunking & fallback",
+    ],
+    challenges: [
+      "Designing efficient PDF chunking for semantic search",
+      "Handling async embedding and retrieval workflows",
+      "Ensuring accurate context mapping during RAG pipeline",
+    ],
+    outcome: [
+      "Deepened understanding of RAG pipelines and vector databases",
+      "Gained experience with embedding models, PDF parsing, and query optimization using LLMs",
+    ],
+  },
+
+  {
     title: "AI Resume Analyzer",
     liveDemo: "https://craft-my-cv-nu.vercel.app/",
     github: "https://github.com/prathap024-ctrl/CraftMyCV.git",
