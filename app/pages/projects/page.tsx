@@ -4,7 +4,7 @@ import React from "react";
 const projects = [
   {
     title: "PDF RAG App",
-    liveDemo: "https://your-live-demo-link.com",
+    liveDemo: "",
     github: "https://github.com/prathap024-ctrl/pdf-rag.git",
     stack: "React, Node.js, LangChain, Gemini AI, ChromaDB, PDF-parser",
     overview:
@@ -26,91 +26,52 @@ const projects = [
       "Gained experience with embedding models, PDF parsing, and query optimization using LLMs",
     ],
   },
-
   {
-    title: "AI Resume Analyzer",
-    liveDemo: "https://craft-my-cv-nu.vercel.app/",
-    github: "https://github.com/prathap024-ctrl/CraftMyCV.git",
-    stack: "React, Node.js, LangChain, Gemini AI, PDF.js",
+    title: "Web Search Tool",
+    liveDemo: "https://browser-streamlit-02.onrender.com/",
+    github: "https://github.com/prathap024-ctrl/browser_streamlit",
+    stack: "Next.js, Node.js, LangChain, Google/Bing Search APIs",
     overview:
-      "Built an AI-powered web tool that parses resumes and offers feedback for ATS optimization.",
+      "Developed an AI-powered web search interface that integrates search APIs with LLM-based summarization for quick, context-rich answers.",
     features: [
-      "Parses uploaded PDF resumes",
-      "Generates basic ATS score using Gemini and LangChain prompts",
-      "Provides improvement suggestions",
-      "Option to export improved resume",
+      "Real-time search results from multiple APIs",
+      "LLM summarization of top results",
+      "Filtering and sorting options",
+      "Minimal, mobile-friendly UI",
+      "Supports multi-query refinement",
     ],
     challenges: [
-      "Learned how to extract basic text content from PDFs using PDF.js",
-      "Structuring prompt responses for clean feedback",
+      "Integrating multiple search APIs and normalizing data",
+      "Handling API rate limits efficiently",
+      "Ensuring accurate LLM summarization without hallucinations",
     ],
     outcome: [
-      "Gained hands-on experience integrating LLMs with file inputs and scoring logic",
-      "Learned how ATS-friendly language and layout work",
+      "Improved skills in API integration and query optimization",
+      "Enhanced experience in prompt engineering for search summarization",
     ],
   },
   {
-    title: "AI Blog URL to Social Media Post Generator",
-    liveDemo: "https://sm-post-generator.vercel.app/",
-    github: "https://github.com/prathap024-ctrl/SM-Post-Generator.git",
-    stack: "Express.js, LangChain, Gemini AI",
+    title: "AutoPixel Digital Website",
+    liveDemo: "https://autopixel-in.vercel.app/",
+    github: "https://github.com/prathap024-ctrl/autopixel.in",
+    stack: "Next.js, Tailwind CSS, Framer Motion",
     overview:
-      "Tool that converts blog articles into short-form social media content using LLMs.",
+      "Designed and developed the official website for AutoPixel Digital, showcasing services, portfolio, and lead generation funnels.",
     features: [
-      "Fetches content from a provided URL",
-      "Summarizes blog content and generates posts",
-      "Allows tone customization and audience targeting",
-      "Supports real-time post editing",
+      "Responsive, modern UI with smooth animations",
+      "Dedicated service and portfolio sections",
+      "Lead capture forms integrated with email automation",
+      "SEO-optimized structure for better search rankings",
+      "Fast load times with optimized assets",
     ],
     challenges: [
-      "Parsing HTML content from blogs reliably",
-      "Tuning LLM output for brevity and tone",
+      "Balancing aesthetics with performance optimization",
+      "Structuring the site for easy future expansion",
+      "Ensuring brand consistency across all pages",
     ],
     outcome: [
-      "Learned how to build step-by-step content pipelines using LangChain to improve output relevance.",
-      "Learned to balance UX with generative AI output quality",
-    ],
-  },
-  {
-    title: "AI Cold Email Writer",
-    liveDemo: "https://flare-mail.vercel.app/",
-    github: "https://github.com/prathap024-ctrl/FlareMail.git",
-    stack: "Express.js, LangChain, Gemini AI",
-    overview:
-      "An application that generates personalized cold emails for different job roles and industries.",
-    features: [
-      "User input-driven email generation",
-      "Supports multiple templates and tones",
-      "Editable preview before copy/export",
-    ],
-    challenges: [
-      "Avoiding generic or repetitive responses",
-      "Maintaining professional and role-specific tone",
-    ],
-    outcome: [
-      "Developed logic for dynamic prompt building",
-      "Improved understanding of LLM input-output tuning",
-    ],
-  },
-  {
-    title: "Paytm Clone",
-    liveDemo: "https://paytm-clone-black.vercel.app/",
-    github: "#",
-    stack: "React.js, Tailwind CSS",
-    overview:
-      "Frontend clone of the Paytm interface focusing on visual design and layout replication.",
-    features: [
-      "Replicated homepage and wallet dashboard",
-      "Responsive across devices",
-      "Used React components and Tailwind utility classes",
-    ],
-    challenges: [
-      "Maintaining pixel precision",
-      "Structuring components for scalability",
-    ],
-    outcome: [
-      "Strengthened UI/UX design skills in React",
-      "Practiced mobile-first responsive design",
+      "Delivered a functional and visually appealing website",
+      "Boosted brand presence and online credibility for AutoPixel Digital",
     ],
   },
 ];
@@ -138,14 +99,16 @@ const ProjectsPage = () => {
               >
                 Live Demo
               </a>
-              <a
-                href={project.github}
-                className="text-blue-600 underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
+              {project.github && (
+                <a
+                  href={project.github}
+                  className="text-blue-600 underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+              )}
             </div>
             <p className="mb-4">
               <strong>Overview:</strong> {project.overview}

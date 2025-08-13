@@ -31,20 +31,6 @@ const ExperienceTimeline = () => {
     },
     {
       id: 2,
-      companyName: "NoxAlgo LLP",
-      jobTitle: "Content Writer - Internship",
-      startDate: "Nov 2024",
-      endDate: "Feb 2025",
-      location: "Remote",
-      description: [
-        "Research and Topic Development: Conducted in-depth research on assigned topics to create engaging and informative content, ensuring accuracy and relevance for the target audience.",
-        "Content Creation: Wrote and edited articles, blog posts, or social media content tailored to the company’s tone and style guidelines, meeting deadlines consistently.",
-        "Collaboration and Feedback: Worked remotely with team members, incorporating feedback from editors or supervisors to refine content and improve writing quality.",
-      ],
-      companyLogo: "",
-    },
-    {
-      id: 3,
       companyName: "Saandipini Hi-tech School",
       jobTitle: "System Administrator",
       startDate: "July 2023",
