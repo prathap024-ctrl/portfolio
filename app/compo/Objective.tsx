@@ -113,7 +113,7 @@ const Objective = () => {
                       </div>
                       <div className="ml-4 shrink-0">
                         <Link
-                          href="https://drive.google.com/file/d/1KGyDuwgZvFzI2jcPhxqzV8bKyDNIWOZH/view?usp=sharing"
+                          href="https://docs.google.com/document/d/1DKptkmZfHwIM3h328MXrtop5RS9UHGC7cgmmqQQDF0Y/edit?usp=sharing"
                           className="font-medium text-indigo-600 hover:text-indigo-500"
                         >
                           <Button>Download</Button>

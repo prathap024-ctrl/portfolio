@@ -3,10 +3,9 @@ import Image from "next/image";
 import images from "../assets/images";
 
 const frontend = [
-  { name: "Html", src: images.html },
-  { name: "Css", src: images.css },
   { name: "Javascript", src: images.javascript },
-  { name: "ReactJS", src: images.react },
+  { name: "React.js", src: images.react },
+  { name: "Next.js", src: images.nextjs },
   { name: "Tailwind Css", src: images.tailwind },
   { name: "Bootstrap", src: images.bootstrap },
 ];
@@ -15,6 +14,7 @@ const backend = [
   { name: "Express", src: images.express, className: "dark:invert" },
   { name: "PostgresQL", src: images.postgres },
   { name: "MongoDB", src: images.mongoDB },
+  { name: "Drizzle ORM", src: images.drizzle },
 ];
 
 const LearningSkillsData = [
@@ -52,10 +52,7 @@ const Skillsec = () => {
             {frontend.map((skill, index) => (
               <div key={index}>
                 <div className="flex justify-center items-center w-20 h-20 mx-auto">
-                  <Image
-                    src={skill.src}
-                    alt="Html"
-                  />
+                  <Image src={skill.src} alt="Html" />
                 </div>
                 <div className="text-center">
                   <p className=" text-xl font-semibold">{skill.name}</p>
@@ -69,7 +66,7 @@ const Skillsec = () => {
         <div className="px-6 py-8 sm:p-10 sm:pb-6">
           <div className="w-[95%] mx-auto">
             <h2 className="text-2xl font-semibold text-center md:text-start">
-              Backend:
+              Backend & Database:
             </h2>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-10 gap-4 py-5 items-center justify-center w-full">
@@ -94,7 +91,7 @@ const Skillsec = () => {
         <div className="px-6 py-8 sm:p-10 sm:pb-6">
           <div className="w-[95%] mx-auto">
             <h2 className="text-2xl font-semibold text-center md:text-start">
-              Learning:
+              Exploring:
             </h2>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-10 gap-4 py-5 items-center justify-center w-full">

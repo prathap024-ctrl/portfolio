@@ -19,6 +19,7 @@ import image18 from "./icons8-photoshop-240.png";
 import image19 from "./drizzle.png";
 import image20 from "./shadcn-ui-seeklogo.png";
 import image21 from "./langchain-icon-seeklogo.png";
+import image22 from "./icons8-nextjs-240.png";
 
 export const images = {
   HeroImage: image1,
@@ -42,6 +43,7 @@ export const images = {
   drizzle: image19,
   shadcn: image20,
   langchain: image21,
+  nextjs: image22,
 };
 
 export default images;
